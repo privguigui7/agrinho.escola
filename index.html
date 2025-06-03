@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Festejando a Conexão Campo Cidade</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #a8e063 0%, #4da822 100%);
+  color: #2d5a2c;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+header {
+  background-color: #3a6a0a;
+  padding: 2rem 1rem;
+  text-align: center;
+  color: #e7f5d1;
+  box-shadow: 0 3px 5px rgba(0,0,0,0.2);
+}
+header h1 {
+  margin: 0;
+  font-weight: 600;
+  font-size: 2.5rem;
+  letter-spacing: 1.5px;
+}
+main {
+  flex-grow: 1;
+  padding: 2rem 1rem;
+  max-width: 900px;
+  margin: 0 auto;
+  background: rgba(255,255,255,0.9);
+  border-radius: 12px;
+  box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+}
+section {
+  margin-bottom: 2rem;
+}
+section h2 {
+  color: #3a6a0a;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  border-bottom: 3px solid #a8e063;
+  padding-bottom: 0.3rem;
+}
+p {
+  line-height: 1.6;
+  font-weight: 300;
+  font-size: 1.1rem;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+.card {
+  flex: 1 1 250px;
+  background: #a8e063;
+  color: #1a3b07;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 5px 12px rgba(0,0,0,0.15);
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  user-select: none;
+}
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 20px rgba(0,0,0,0.3);
+}
+.card h3 {
+  margin-top: 0;
+  font-weight: 600;
+  font-size: 1.3rem;
+  margin-bottom: 0.8rem;
+}
+.card p {
+  font-weight: 400;
+  font-size: 1rem;
+}
+/* Quiz section */
+#quiz {
+  text-align: center;
+}
+#quiz h2 {
+  margin-bottom: 1rem;
+}
+#quiz button {
+  background-color: #56ab2f;
+  border: none;
+  color: #e7f5d1;
+  padding: 12px 28px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.25s ease;
+}
+#quiz button:hover {
+  background-color: #3a6a0a;
+}
+#quiz p {
+  font-weight: 400;
+  font-size: 1.1rem;
+  margin-top: 1rem;
+  min-height: 1.5rem;
+}
+footer {
+  text-align: center;
+  padding: 1rem 1rem;
+  background-color: #3a6a0a;
+  color: #e7f5d1;
+  font-size: 0.9rem;
+  margin-top: auto;
+}
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.8rem;
+  }
+  .cards {
+    flex-direction: column;
+  }
+}
+</style>
+</head>
+<body>
+
+<header>
+<h1>Festejando a Conexão Campo & Cidade</h1>
+</header>
+
+<main>
+<section>
+<h2>A Importância da Tecnologia no Agro</h2>
+<p>
+A tecnologia tem impulsionado uma revolução no setor agrícola, conectando o campo às cidades de maneiras inovadoras.
+Sensores inteligentes, drones, inteligência artificial e sistemas de monitoramento garantem colheitas mais eficientes, sustentáveis e com melhor qualidade.
+</p>
+</section>
+
+<section>
+<h2>Como Isso Afeta a Saúde da População</h2>
+<p>
+Com práticas agrícolas aprimoradas, alimentos mais seguros e nutritivos chegam à mesa da população urbana e rural, contribuindo diretamente para a melhora da saúde pública.
+Além disso, tecnologias ambientais ajudam a minimizar o uso de agrotóxicos e preservam os recursos naturais essenciais para a vida.
+</p>
+</section>
+
+<section>
+<h2>Descubra Mais</h2>
+<div class="cards" id="infoCards">
+<div class="card" tabindex="0" data-info="Sensores no campo ajudam agricultores a monitorar solo, clima e pragas em tempo real, aumentando a produtividade.">
+<h3>Sensores Inteligentes</h3>
+<p>Clique para saber mais...</p>
+</div>
+<div class="card" tabindex="0" data-info="Drones auxiliam no mapeamento de grandes áreas, identificando falhas na plantação e possibilitando correções rápidas.">
+<h3>Drones no Agro</h3>
+<p>Clique para saber mais...</p>
+</div>
+<div class="card" tabindex="0" data-info="A inteligência artificial otimiza as decisões no campo, desde o plantio até a colheita, reduzindo desperdícios e impactos ambientais.">
+<h3>Inteligência Artificial</h3>
+<p>Clique para saber mais...</p>
+</div>
+<div class="card" tabindex="0" data-info="Alimentos mais seguros e nutritivos são produzidos graças ao monitoramento rigoroso e o uso controlado de insumos.">
+<h3>Alimentos Saudáveis</h3>
+<p>Clique para saber mais...</p>
+</div>
+</div>
+</section>
+
+<section id="quiz">
+<h2>Quiz Rápido: Tecnologia no Agro</h2>
+<p id="quizQuestion">Qual tecnologia ajuda a monitorar o solo e o clima em tempo real?</p>
+<button data-answer="Sensores Inteligentes">Sensores Inteligentes</button>
+<button data-answer="Drones no Agro">Drones no Agro</button>
+<button data-answer="Inteligência Artificial">Inteligência Artificial</button>
+<p id="quizFeedback"></p>
+</section>
+</main>
+
+<footer>
+&copy; 2024 Festejando a Conexão Campo & Cidade • Todos os direitos reservados
+By-Angelina e Guilherme Azevedo
+</footer>
+
+<script>
+// Função para mostrar as informações do cartão
+function showInfo(card) {
+  alert(card.getAttribute('data-info'));
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  const cards = document.querySelectorAll('.card');
+
+  cards.forEach(card => {
+    card.addEventListener('click', () => showInfo(card));
+    card.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        showInfo(card);
+      }
+    });
+  });
+
+  const buttons = document.querySelectorAll('#quiz button');
+  const feedback = document.getElementById('quizFeedback');
+  const correctAnswer = "Sensores Inteligentes";
+
+  buttons.forEach(button => {
+    button.addEventListener('click', () => {
+      const userAnswer = button.getAttribute('data-answer');
+      if (userAnswer === correctAnswer) {
+        feedback.textContent = "Parabéns! Você acertou. Sensores inteligentes são essenciais para monitorar solo e clima em tempo real.";
+        feedback.style.color = '#2a7a1f';
+      } else {
+        feedback.textContent = "Ops, tente novamente! Pense nas tecnologias que coletam dados diretamente do campo.";
+        feedback.style.color = '#a12a2a';
+      }
+    });
+  });
+});
+</script>
+
+</body>
+</html>
